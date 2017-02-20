@@ -1,0 +1,73 @@
+{
+  "name": "real-estate-app",
+  "description": "Real Estate Application for Agents, Builders",
+  "version": "0.1.10",
+  "keywords": [
+    "Real Estate Agents App",
+    "Real Estate Builders App"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Venkat Reddy Chintalapudi",
+    "email": "venkatreddyc@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/venkatreddyc/real-estate-app"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "async": "^1.x.x",
+    "bcrypt": "^0.8.x",
+    "body-parser": "^1.x.x",
+    "compression": "^1.x.x",
+    "connect-mongo": "^0.8.x",
+    "cookie-parser": "^1.x.x",
+    "csurf": "^1.x.x",
+    "emailjs": "^0.3.x",
+    "express": "^4.12.x",
+    "express-session": "^1.x.x",
+    "helmet": "^0.9.x",
+    "jade": "^1.x.x",
+    "method-override": "^2.x.x",
+    "mongoose": "4.x.x",
+    "morgan": "^1.x.x",
+    "passport": "^0.2.x",
+    "passport-facebook": "^2.x.x",
+    "passport-github": "^0.1.x",
+    "passport-google-oauth": "^0.2.x",
+    "passport-local": "^1.x.x",
+    "passport-oauth": "^1.x.x",
+    "passport-tumblr": "^0.1.x",
+    "passport-twitter": "^1.x.x",
+    "serve-static": "^1.9.x"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-html2js": "^0.3.0",
+    "grunt-karma": "^0.10.1",
+    "grunt-newer": "^0.8.0",
+    "grunt-nodemon": "^0.3.0",
+    "grunt-usemin": "^3.0.0",
+    "jasmine-core": "^2.2.0",
+    "karma": "^0.12.31",
+    "karma-chrome-launcher": "~0.1",
+    "karma-firefox-launcher": "~0.1",
+    "karma-jasmine": "^0.3.5",
+    "karma-phantomjs-launcher": "~0.1",
+    "mongodb": "~2.0",
+    "prompt": "^0.2.14"
+  }
+}
