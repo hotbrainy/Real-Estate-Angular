@@ -1,0 +1,30 @@
+body {
+  padding-top: 50px;
+}
+
+h1, h2 {
+  letter-spacing: -1px;
+}
+
+fieldset {
+  min-width: 0;
+  margin-bottom: 20px;
+}
+
+table thead th {
+  background-color: #ddd;
+}
+
+select, textarea, input, .form-control {
+  font-size: 16px; //ios input zoom prevention hack
+}
+
+.special {
+  text-align: center;
+}
+.super-awesome {
+  display: block;
+  margin-top: -15px;
+  color: #7f7f7f;
+  font-size: 20em;
+}

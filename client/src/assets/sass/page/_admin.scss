@@ -1,0 +1,141 @@
+#admin{
+  .stat {
+    text-align: center;
+    @include gradient-vertical(#555, darken(#555, 12%));
+    background-color: #555;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .stat-value {
+    color: #fff;
+    font-size: 2.2em;
+    font-weight: bold;
+    letter-spacing: -1px;
+  }
+  .stat-label {
+    color: #ccc;
+    font-weight: bold;
+  }
+}
+#admin-users-index{
+  .input-group {
+    margin-bottom: 20px;
+
+    input {
+      width: 200px !important;
+    }
+
+    .btn {
+      @include border-left-radius(0);
+    }
+  }
+  .filters {
+    margin-bottom: 20px;
+  }
+  .stretch {
+    width: 100%;
+  }
+}
+
+#admin-accounts-index, #admin-administrators-index,
+#admin-groups-index{
+  @extend #admin-users-index;
+  .nowrap {
+    white-space: nowrap;
+  }
+}
+
+#admin-accounts-detail{
+  .status-items {
+    overflow: scroll;
+
+    .status {
+      padding: 10px 5px;
+      font-size: 12px;
+      border-bottom: 1px solid #ccc;
+
+      .author {
+        font-weight: normal;
+        color: #999;
+        text-shadow: none;
+        background-color: transparent;
+        border: 1px solid #ccc;
+      }
+    }
+    .status:nth-child(even) {
+      background-color: #f5f5f5;
+    }
+  }
+
+  .notes-new {
+    textarea {
+      margin-bottom: 0;
+      border-bottom: none;
+      @include border-bottom-radius(0);
+    }
+    .btn {
+      @include border-top-radius(0);
+    }
+  }
+
+  .notes-items {
+    .note {
+      padding: 10px 5px;
+      font-size: 12px;
+      border-bottom: 1px solid #ccc;
+
+      .author {
+        font-weight: normal;
+        color: #999;
+        text-shadow: none;
+        background-color: transparent;
+        border: 1px solid #ccc;
+      }
+    }
+    .note:nth-child(even) {
+      background-color: #f5f5f5;
+    }
+  }
+}
+
+#admin-administrators-detail, #admin-groups-detail{
+  .groups, .permissions{
+    .input-group input[disabled]{
+      border-radius: 0;
+      border-bottom: none;
+    }
+    .input-group .btn{
+      border-radius: 0;
+    }
+    .input-group:first-of-type input[disabled]{
+      border-top-left-radius: 4px;
+    }
+    .input-group:first-of-type .btn-delete{
+      border-top-right-radius: 4px;
+    }
+    .input-group:last-of-type input[disabled]{
+      border-bottom-left-radius: 4px;
+      border-bottom: 1px solid #ccc;
+    }
+    .input-group:last-of-type .btn-delete{
+      border-bottom-right-radius: 4px;
+    }
+  }
+}
+
+#admin-statuses-index, #admin-categories-index{
+  @extend #admin-accounts-index;
+  .input-group{
+    input {
+      width: 100px !important;
+
+      @media screen and (min-width: $grid-float-breakpoint){
+        width: 160px !important;
+      }
+    }
+
+    input:nth-child(2){
+      border-left: none;
+    }
+  }
+}
